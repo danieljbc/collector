@@ -6,7 +6,7 @@ public class ProcessedCommit implements DataObject {
     public long messageLength;
     public long numberPreviousCommits;
 
-    ProcessedCommit(String hash, long messageLength, long numberPreviousCommits){
+    ProcessedCommit(String hash, long messageLength, long numberPreviousCommits) {
         this.hash = hash;
         this.messageLength = messageLength;
         this.numberPreviousCommits = numberPreviousCommits;

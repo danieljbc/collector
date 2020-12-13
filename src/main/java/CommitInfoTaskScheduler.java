@@ -14,7 +14,7 @@ public class CommitInfoTaskScheduler extends TaskScheduler {
     private static final String REMOTE_URL = "https://github.com/opus-research/organic.git";
     private static final String REPO_PATH = "temp/";
 
-    static void deleteFolder(File f) throws IOException{
+    static private void deleteFolder(File f) throws IOException{
         if (f.isDirectory())
             for (File c : f.listFiles())
                 deleteFolder(c);

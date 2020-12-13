@@ -5,7 +5,6 @@ import collector.TaskScheduler;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
-import org.eclipse.jgit.lib.PersonIdent;
 
 import java.util.ArrayList;
 import java.util.HashMap;
