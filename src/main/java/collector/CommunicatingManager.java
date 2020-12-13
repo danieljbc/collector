@@ -30,11 +30,14 @@ class CommunicatingManager {
      *  Runnable interface (Command pattern). Using that executor, it schedules the execution of the TaskScheduler.
      */
     protected void start(){
+        // In this case, we only need a single thread as this executor will only be used to execute the taskScheduler.
         ScheduledExecutorService taskSchedulerExecutor = Executors.newSingleThreadScheduledExecutor();
         if (taskScheduler.isUpdatable()) {
+            // Spawns a thread that will execute a tasks immediately, and will repeat that task in a certain interval, in seconds.
             schedulerFuture = taskSchedulerExecutor.scheduleAtFixedRate(this.taskScheduler, 0, taskScheduler.getUpdateInterval(), TimeUnit.SECONDS);
         }
         else {
+            // Spawns a thread that will execute a tasks immediately, only once.
             schedulerFuture = taskSchedulerExecutor.schedule(this.taskScheduler, 0, TimeUnit.SECONDS);
         }
     }
