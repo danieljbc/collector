@@ -148,4 +148,9 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
+### Remove output from the program.
+temp/
+summary.csv
+*.lock
+
 # End of https://www.toptal.com/developers/gitignore/api/intellij,java,gradle

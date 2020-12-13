@@ -67,7 +67,7 @@ public class CommitInfoTaskScheduler extends TaskScheduler {
             ArrayList<DataObject> commitsList = new ArrayList<>();
             Iterable<RevCommit> logs = repo.log().call();
             for (RevCommit rev : logs){
-                CollectedCommit commit = new CollectedCommit(rev.getFullMessage(), rev.getAuthorIdent());
+                CollectedCommit commit = new CollectedCommit(rev.getName(), rev.getFullMessage(), rev.getAuthorIdent());
                 commitsList.add(commit);
             }
             collector.DBConnection.storeData(commitsList, ProcessSteps.COLLECTION);

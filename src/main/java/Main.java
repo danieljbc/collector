@@ -14,10 +14,7 @@ class Main {
      * Also starts the collection process.
      */
     public static void main(String[] args) {
-        Collector collector = new Collector(new CommitInfoTaskScheduler(), new MetricCalculatorTaskScheduler(), new SummaryTaskScheduler());
+        Collector collector = new Collector(new CommitInfoTaskScheduler(), new MetricCalculatorTaskScheduler(), new SummaryTaskScheduler(1600));
         collector.startCollector();
     }
 }
-
-//taskExecutor = Executors.newFixedThreadPool(Collector.NUM_PROCESSING_WORKERS);
-//taskScheduler.setExecutor(taskExecutor);
