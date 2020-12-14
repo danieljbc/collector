@@ -18,7 +18,7 @@ For the tests that are specific to the workflow of the framework, we designed se
 
 ### Test Logs
 
-The logs for the execution of the tests was generated in the HTML format and can be found [**here**](https://htmlpreview.github.io/?https://github.com/danieljbc/collector/blob/master/docs/files/testlogs.html).
+The logs for the execution of the tests was generated in the HTML format and can be found [**here**](https://htmlpreview.github.io/?https://github.com/danieljbc/collector/blob/master/docs/files/testlogs.html). You can click on the name of each test to expand the log for each individual test case.
 
 ## Framework Instantiation
 

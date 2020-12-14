@@ -1,6 +1,8 @@
 package fixtures;
 
-public class EmptyTaskScheduler {
+import collector.TaskScheduler;
+
+public class EmptyTaskScheduler extends TaskScheduler {
 
     public void run(){
         // DOES NOTHING
