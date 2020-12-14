@@ -1,6 +1,9 @@
 import collector.DataObject;
 import org.eclipse.jgit.lib.PersonIdent;
 
+/**
+ * Data Class representing the commit data that is collected in the collection step.
+ */
 public class CollectedCommit implements DataObject {
 
     public String hash;
