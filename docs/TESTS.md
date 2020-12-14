@@ -14,9 +14,11 @@ Tests are named in terms of those operations: (1) **connection**, which tests if
 
 ### Collector Tests
 
+For the tests that are specific to the workflow of the framework, we designed seven test cases. Which are designed to test different combinations of different combinations of steps working concurrently.
+
 ### Test Logs
 
-The logs for the execution of the tests was generated in the HTML format and can be found [**here**]().
+The logs for the execution of the tests was generated in the HTML format and can be found [**here**](https://htmlpreview.github.io/?https://github.com/danieljbc/collector/blob/master/docs/files/testlogs.html).
 
 ## Framework Instantiation
 
