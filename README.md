@@ -20,7 +20,7 @@ After the project is built using `gradle build` (covered in the previous section
 
 ## Executing
 
-After the project is built using `gradle build` (covered in the first section), you can use the `gradle run` command to execute the automated tests.
+After the project is built using `gradle build` (covered in the first section), you can use the `gradle run` command to execute the automated tests. An already compiled release can also be found in the [releases page for the repository](https://github.com/danieljbc/collector/releases).
 
 ## IntelliJ IDEA
 
