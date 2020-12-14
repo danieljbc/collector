@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class ProcessTest {
+public class CollectorTests {
 
     @Test
     public void testCaseOne(){
